@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Our.Umbraco.Community.TagManager.Repositories;
-using Umbraco.Cms.Web.BackOffice.Controllers;
+using Umbraco.Cms.Api.Management.Controllers;
 
 namespace Our.Umbraco.Community.TagManager.Controllers
 {
-    public class TagListController : UmbracoAuthorizedApiController
+    public class TagListController : ManagementApiControllerBase
     {
         private readonly ITagListRepository _tagListRepository;
 
